@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Arial-MT';
+    src: url(../assets/fonts/Arial-MT.woff) format('woff') ;
+}
+
+body {
+  min-width: 480px;
+  margin: 0;
+  min-height: 100vh;
+  transition: .3s linear;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 27vh;
+    min-height: 220px;
+    padding: 20px;
+  }
+
+  .player__buttons__bar {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .player_button {
+    opacity: .8;
+    transition: .2s;
+    cursor: pointer;
+  }
+
+  .player_button:hover{
+    opacity: 1;
+    transition: .2s;
+  }
+
+  .player_button:nth-child(2){
+    width: 40px;
+    height: 40px;
+  }
+
+  .player_button:nth-child(1),
+  .player_button:nth-child(3) {
+    height: 32px;
+    width: 32px;
+  }
+
+
+  main {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 37.1vh;
+    min-height: 260px;
+    padding: 20px;
+}
+
+.current__time{
+  font-family: Arial-MT;
+  margin: 19px 0 10px 0;
+  min-height: 124px;
+  font-size: 100px;
+  letter-spacing: -4px;
+}
+
+.time__calendar__greetings {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 13.417vw;
+  display: flex;
+}
+
+.current__data{
+  font-size: 24px;
+  font-family: Arial;
+}
+.greeting {
+  flex-direction: row;
+  justify-content: center;
+  /*margin-top: 1.3vw;*/
+  display: flex;
+}
+
+.current__greeting, 
+.user__name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+}
+
+.current__greeting {
+  margin-right: 8px;
+  text-align: end;
+}
+
+.user__name {
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  color: white;
+  resize: horizontal;
+  width: 31%;
+  background: none;
+}
+
+.user__name::-webkit-input-placeholder {
+  color: #ababa9; 
+}
+
+.width__user__name__value {
+  color: transparent;
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 0px;
+  position: absolute;
+  z-index: -5;
+}
+
+.background_button,
+.previous__background,
+.next__background {
+  width: 32px;
+  position: relative;
+  top: 8px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.previous__background:hover,
+.next__background:hover {
+  opacity: 1;
+  transition: .2s;
+}
+
+.searching__string {
+  display: block;
+  width: 170px;
+  height: 34px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+}
+
+.searching__string::-webkit-input-placeholder {
+  color: #ababa9; 
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial';
+  font-size: 16px;
+  justify-content: space-between;
+  height: 180px;
+  width: 180px;
+}
+
+.weather-icon {
+  font-size: 44px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.weather__error {
+  margin-top: -10px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  height: 30vh;
+  min-height: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.refresh__button {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  transition: .2s linear;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.refresh__button:hover {
+  opacity: 1;
+  transition: .2s linear;
+}
+
+.quotes {
+  min-height: 32px;
+  text-align: center;
+}
+
+.author {
+  min-height: 20px;
+}
+
+@media (max-width: 850px) {
+  .current__time {
+    min-height: 80px;
+    font-size: 72px;
+  } 
+
+  .current__data {
+    min-height: 28px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .current__greeting, 
+  .user__name {
+    font-size: 26px;
+  }
+
+  .time__calendar__greetings {
+    height: 100%;
+  }
+
+  .width__user__name__value {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Momentum</title>
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/owfont-regular.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="player">
+            <div class="player__buttons__bar">
+                <img src="./assets/svg/play-prev.svg" alt="previous_track" class="player_button">
+                <img src="./assets/svg/play.svg" alt="play_and_pause_button" class="player_button">
+                <img src="./assets/svg/play-next.svg" alt="next_track" class="player_button">
+            </div>
+            <div class="play__list"></div>
+        </div>
+        <div class="weather">
+            <input type="text" class="searching__string"></input>
+            <i class="weather-icon owf"></i>
+            <div class="weather__error"></div>
+            <div class="description__container"></div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+        </div>
+    </header>
+    <main>
+        <div class="previous__background">
+            <img src="./assets/svg/slider-prev.svg" alt="previous_background_image" class="background_button">
+        </div>
+        <div class="time__calendar__greetings">
+            <div class="current__time"></div>
+            <div class="current__data"></div>
+            <div class="greeting">
+                <div class="current__greeting"></div>
+                <input type="text" class="user__name" maxlength="16">
+                <span class="width__user__name__value"></span>
+            </div>
+        </div>
+        <div class="next__background">
+            <img src="./assets/svg/slider-next.svg" alt="next_background_image" class="background_button">
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="refresh__button">
+                <img src="./assets/svg/reload.svg" alt="reload_quatation" class="refresh__button">
+            </div>
+            <div class="quotes"></div>
+            <div class="author"></div>
+        </div>
+        
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>
