@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="pop__up__menu">
+        <div class="settings language">
+            <div class="title">Select language:</div>
+            <div class="button lang_eng">English</div>
+            <div class="button lang_rus">Russian</div>
+            <div class="button lang_bel">Belarusian</div>
+        </div>
+        <div class="settings background__sources">
+            <div class="title">Select source of backgrounds:</div>
+            <div class="button github">GitHub</div>
+            <div class="button unsplash">Unsplash</div>
+            <div class="button flickr">Flickr </div>
+        </div>
+        <div class="settings tags">
+            <div class="title">Select tag:</div>
+            <div class="button nature">Nature</div>
+            <div class="button space">Space</div>
+            <div class="button cities">Cities </div>
+        </div>
+        <div class="settings_button">
+            <img src="./assets/svg/slider-next.svg" alt="open__slider">
+        </div>
+    </div>
+    
     <header>
         <div class="player">
             <div class="player__buttons__bar">
@@ -17,7 +41,30 @@
                 <img src="./assets/svg/play.svg" alt="play_and_pause_button" class="player_button">
                 <img src="./assets/svg/play-next.svg" alt="next_track" class="player_button">
             </div>
-            <div class="play__list"></div>
+            <div class="name"></div>
+            <div class="timeline">
+                <div class="progress"></div>
+            </div>
+            <div class="controls">
+                <div class="time">
+                  <div class="current">00:00</div>
+                  <div class="divider">/</div>
+                  <div class="length">00:00</div>
+                </div>
+                <div class="volume-container">
+                  <div class="volume-button">
+                    <div class="volume icono-volumeMedium">
+                        <img src="./assets/svg/sound.svg" alt="volume" class="volume__control">
+                    </div>
+                  </div>
+                  <div class="volume-slider">
+                    <div class="volume-percentage"></div>
+                  </div>
+                </div>
+              </div>
+            <div class="play__list__wrapper">
+                <ul class="play__list"></ul>
+            </div>
         </div>
         <div class="weather">
             <input type="text" class="searching__string"></input>
@@ -56,5 +103,6 @@
         
     </footer>
 </body>
-<script src="./index.js"></script>
+<script type="module" src="./index.js"></script>
+<!-- <script type="module" src="./assets/sounds/playList.js"></script> -->
 </html>
