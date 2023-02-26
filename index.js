@@ -49,6 +49,7 @@ function checkInput(currentLanguage) {
         greetingWidth.textContent = `${userName.value}`;
         userName.style.width = `${greetingWidth.offsetWidth + 3}px`;
      } else {
+         userName.setAttribute('placeholder', '[Enter name]')
          greetingWidth.textContent = placeholderTranslations[currentLanguage][0];
          userName.style.width = `${greetingWidth.offsetWidth + 3}px`;
      }
@@ -887,6 +888,7 @@ function setLocalStorage() {
     } else {
         currentLanguage = 'english';
         englishLanguage.classList.add('active')
+        getQuote(currentLanguage)
         translateSettings()
     }
 
