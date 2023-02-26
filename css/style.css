@@ -322,15 +322,31 @@ footer {
   border-radius: 0%;
   top: 0;
 }
+
+.settings_button{
+  background: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s linear;
+}
+
+.settings_button:hover{
+  opacity: 1;
+  transition: 0.2s linear;
+}
+
 .settings_button.active{
   background: none;
   transform: rotate(180deg);
+  cursor: pointer;
+  transition: 0.2s linear;
 }
 
 .settings_button > img {
   width: 30px;
   height: 30px;
   transform: rotate(90deg);
+  transition: 0.2s linear;
 }
 
 .timeline {
@@ -519,6 +535,24 @@ scale: 105%;
   opacity: 0;
   visibility: hidden;
   transition: .3s linear;
+}
+
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 180px;
+  font-size: 16px;
+}
+
+div.contacts > a:nth-child(1) {
+  text-decoration: none;
+  color: white;
+}
+
+div.contacts > a:nth-child(3) > img {
+  width: 50px;
+  filter: invert(1);
 }
 
 @media (max-width: 850px) {
